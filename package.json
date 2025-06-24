@@ -1,0 +1,14 @@
+{
+  "name": "k6-tests",
+  "version": "1.0.0",
+  "description": "Suite de testes de performance com K6",
+  "scripts": {
+    "test:smoke": "k6 run --env ENVIRONMENT=dev tests/performance/a.Smoke.js",
+    "test:load": "k6 run --env ENVIRONMENT=dev tests/performance/b.LoadVar.js",
+    "test:stress": "k6 run --env ENVIRONMENT=dev tests/performance/d.Stress.js",
+    "test:spike": "k6 run --env ENVIRONMENT=dev tests/performance/e.Spike.js",
+    "test:all": "./scripts/run-all.sh"
+  },
+  "keywords": ["k6", "performance", "testing"],
+  "author": "Seu Nome"
+}
