@@ -1,5 +1,2 @@
 .env
 config/
-environments.js
-test-configs.js
-thresholds.js
